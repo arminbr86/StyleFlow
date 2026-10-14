@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+@font-face {
+  font-family: "Geist";
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("https://fonts.gstatic.com/s/geist/v1/UcyQyWDJ7Tb6MAaPLrm4tg8Ao4.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Geist Mono";
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("https://fonts.gstatic.com/s/geistmono/v1/_Xk-PF2IFN0R2UgCSqCSCmZnpQ.woff2") format("woff2");
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #1a1612;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+/* Custom scrollbar for windows */
+.win-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.win-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.win-scroll::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.win-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* Dark scrollbar for tweet window */
+.dark-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.dark-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.dark-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
