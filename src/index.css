@@ -1,21 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap");
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-}
-
-@font-face {
-  font-family: "Geist";
-  font-display: swap;
-  font-weight: 100 900;
-  src: url("https://fonts.gstatic.com/s/geist/v1/UcyQyWDJ7Tb6MAaPLrm4tg8Ao4.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Geist Mono";
-  font-display: swap;
-  font-weight: 100 900;
-  src: url("https://fonts.gstatic.com/s/geistmono/v1/_Xk-PF2IFN0R2UgCSqCSCmZnpQ.woff2") format("woff2");
 }
 
 * {
